@@ -1,0 +1,36 @@
+%btn {
+  border-radius: 30px;
+  display: inline-block;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+}
+.btn-primary {
+  @extend %btn;
+  background-color: $primary-color;
+  &:hover {
+    background-color: $button-color;
+  }
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: $secondary-color;
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+.btn-form {
+  @extend %btn;
+  background-color: #fff;
+  color: $secondary-color;
+  display: block;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: $button-color;
+    color: #fff;
+  }
+}
